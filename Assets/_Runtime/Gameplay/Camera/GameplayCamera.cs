@@ -17,9 +17,11 @@ namespace _Runtime.Gameplay.Camera
 
         private PlayerSpawningHandler _playerSpawningHandler => _servicesProvider.PlayerSpawningHandler;
 
-
+        
+        
         private void Start()
         {
+            _servicesProvider.GameplayCamera = this;
             SetCameraTargetsForExistingPlayers();
         }
 

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using _Runtime.Gameplay.Camera;
 using _Runtime.Gameplay.Player;
 using Fusion;
 using NaughtyAttributes;
@@ -19,7 +20,7 @@ public class ServicesProvider : ScriptableObject
     public NetworkEventRelay     NetworkEventRelay     => _networkEventRelay;
     public PlayerSpawningHandler PlayerSpawningHandler => _playerSpawningHandler;
 
-    public PlayerController LocalPlayer;
+    public GameplayCamera GameplayCamera;
 
     public void InitServices()
     {

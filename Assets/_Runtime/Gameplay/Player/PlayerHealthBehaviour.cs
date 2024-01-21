@@ -108,6 +108,7 @@ namespace _Runtime.Gameplay.Player
             var isLocalPlayer = _localPlayer.IsLocalPlayer();
             if (isLocalPlayer && healthAmount > 0)
             {
+                _servicesProvider.GameplayCamera.ShakeCamera(new(-0.3f, 0f));
             }
 
             if (healthAmount <= 0)

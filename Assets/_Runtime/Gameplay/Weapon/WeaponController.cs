@@ -1,4 +1,5 @@
 ﻿using System;
+using _Runtime.Gameplay.Camera;
 using _Runtime.Gameplay.Weapon;
 using _Runtime.Gameplay.Weapon.States;
 using AK.RTStateMachine;
@@ -30,8 +31,7 @@ namespace _Runtime.Gameplay.Player
         private BaseWeaponState _normalWeaponState;
         private BaseWeaponState _heavyWeaponState;
         private WeaponType      _selectedWeapon = WeaponType.NORMAL;
-
-        public Quaternion LocalPivotRotation { get; private set; }
+        public  Quaternion      LocalPivotRotation { get; private set; }
 
         private void Awake()
         {
@@ -95,7 +95,7 @@ namespace _Runtime.Gameplay.Player
             {
                 if (IsLocalPlayer())
                 {
-                    // playerCamera.ShakeCamera(shootingCamShake);
+                    _servicesProvider.GameplayCamera.ShakeCamera(_shootingCamShake);
                 }
 
                 _shootCooldown = TickTimer.CreateFromSeconds(Runner, _delayBetweenShots);
