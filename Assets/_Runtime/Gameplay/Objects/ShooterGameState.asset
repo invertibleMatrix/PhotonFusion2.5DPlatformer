@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d62c3655dfaf83e47bf6dd5e0405de83, type: 3}
+  m_Name: ShooterGameState
+  m_EditorClassIdentifier: 
+  NextTransition: {fileID: 11400000, guid: c643d01e3612f2941affe0582dbfff1a, type: 2}
+  RestartStateTransition: {fileID: 11400000, guid: c643d01e3612f2941affe0582dbfff1a, type: 2}
+  LevelPrefab: {fileID: 1602468573216249364, guid: 73a2fd52892584b4987a234f46658881, type: 3}
+  ServicesProvider: {fileID: 11400000, guid: e192082ac5904e446aded3b12d59cb9c, type: 2}

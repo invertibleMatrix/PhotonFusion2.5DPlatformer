@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556fafa9c456cfe4cacce46cfe481080, type: 3}
+  m_Name: MainMenuState
+  m_EditorClassIdentifier: 
+  NextTransition: {fileID: 11400000, guid: c643d01e3612f2941affe0582dbfff1a, type: 2}
+  ViewPrefab:
+    fileName: MainMenuView
+    fileGuid: 6ff0ebf718d5db642a3c0ddc223eb8ed
+    resourceFilePath: MainMenuView
+    filePath: Assets/_Runtime/Menu/Resources/MainMenuView.prefab
+  RestartStateTransition: {fileID: 11400000, guid: a0eea4f94b782b94894416a8d810db3e, type: 2}
+  _servicesProvider: {fileID: 11400000, guid: e192082ac5904e446aded3b12d59cb9c, type: 2}
